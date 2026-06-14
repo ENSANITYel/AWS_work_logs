@@ -29,4 +29,6 @@ after turned on i was able to paste the policy and use the link to view the publ
 
 <img width="1346" height="610" alt="image" src="https://github.com/user-attachments/assets/0dfa1148-10e6-4a81-9b0b-fea6054482f0" />
 
+2.created a versioning for the object and tried it out using a file and how AWS automatically finds the exact file and attach versions to it.
 
+3.created a lifecycle rule and added to the bucket where nonconcurrent versions would be deleted keeping just the current ones
