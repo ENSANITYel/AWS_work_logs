@@ -38,5 +38,24 @@ and availabile subnet possible ranges ----0.0.1.0 to 0.0.255.0
 
   scripts : ssh -A ec2-user@10.0.4.101
 
+  <img width="786" height="470" alt="image" src="https://github.com/user-attachments/assets/be412667-1471-4e71-84be-3492094fb1c2" />
+
+6.create a 5gb EBS volume check attach it to bastion host log in via ssh ...format the drive and mount it to a directory write a dummy file to it.
+scripts: lsblk ---list all disks attached
+         sudo file -s /dev/xvdb
+         sudo mkfs -t xfs /dev/xvdb
+         sudo mkdir /mnt/data5g
+         sudo mount /dev/xvdb /mnt/data5g
+         df -h ------list all free space 
+         sudo chown ec2-user :ec2-user /mnt/data5g-----ownership of the drive 
+         echo "Success"> /mnt/data5g/success.txt
+         cat /mnt/data5g/succes.5g
+
+ <img width="625" height="379" alt="image" src="https://github.com/user-attachments/assets/31bbeb73-feda-4d9f-bccf-91b785a91000" />
+
+        
+         
+
+
 
   
