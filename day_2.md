@@ -32,3 +32,12 @@ after turned on i was able to paste the policy and use the link to view the publ
 2.created a versioning for the object and tried it out using a file and how AWS automatically finds the exact file and attach versions to it.
 
 3.created a lifecycle rule and added to the bucket where nonconcurrent versions would be deleted keeping just the current ones
+
+4.created a IAM role with resource as ec2 in a way like for ec2 the resource would work sand gave it permission of s3 readonly access so it can just read anything from s3 
+
+<img width="648" height="408" alt="image" src="https://github.com/user-attachments/assets/1edaa471-963b-41ed-b41f-0c96b5b9759a" />
+
+tried inserting into s3 bucket without full access got denied 
+
+<img width="781" height="508" alt="image" src="https://github.com/user-attachments/assets/517f2f82-25d5-4e7c-b042-a3004ee2c678" />
+
