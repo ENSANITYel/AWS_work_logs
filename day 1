@@ -1,5 +1,5 @@
 1. created a AWS accnt as a root and anther iam user(demo) with root access and created a ec2 instance in ssh connected using putty
 2.setup a aws budget for 5 euro and a monthly email alert if ceossed over it
 3.create a default vpc and created 2 public subnets in different AZ and connected a route table to it and connected it to a custom igw 
-  ![Public subnet diagram(https://github.com/ENSANITYel/AWS_work_logs/blob/ce101c45c87a325b102ca7adf20d704b20df1b0d/aws/public_subnet.png)
+https://github.com/ENSANITYel/AWS_work_logs/blob/ce101c45c87a325b102ca7adf20d704b20df1b0d/aws/public_subnet.png
 4.
