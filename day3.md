@@ -65,7 +65,7 @@ task :application load balancers--launch two copy ins and check from web the dif
   dnf install httpd -y
   systemctl start httpd
   systemctl enable httpd
-  echo "<h1>serer 1 <h2>" > /var/www/html/index.html
+  echo "h1 serer 1 h2" > /var/www/html/index.html
 
   NOTE :
   🔹 /var
@@ -88,9 +88,9 @@ When someone visits your server IP or domain, this file is shown
    dnf install httpd -y
    systemctl start httpd
    systemctl enable httpd
-   echo "<h1>server 2<h2>" > /var/www/html/index.html
+   echo " h1 server 2 h1" > /var/www/html/index.html
 
-   but i didnt use sudo so installing of package failed henceforth the rest of it could have done
+    but i didnt use sudo so installing of package failed henceforth the rest of it could have done
 -- sudo su
     OR
    used sudo keyword before all the shells
