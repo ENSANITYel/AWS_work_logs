@@ -1,4 +1,4 @@
-<img width="1346" height="624" alt="image" src="https://github.com/user-attachments/assets/f835aaf9-81cd-40c0-ba02-92b59256f462" />TASK : Acess shell via termux from my phone providing unlimited access from hands 
+TASK : Acess shell via termux from my phone providing unlimited access from hands 
 
 tried accessing via ssh 
 problem 1: inbound rules only my laptop ip 
@@ -117,5 +117,4 @@ sudo echo "<>hi<>" > /var/www/html/index.html
 <img width="1360" height="718" alt="image" src="https://github.com/user-attachments/assets/bbcfb1e4-21fd-45c7-9e27-852a42e484e7" />
 
 
-TASK : Learn DNS routing conceptually 
-1.
+
