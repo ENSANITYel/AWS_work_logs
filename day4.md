@@ -30,4 +30,16 @@ and the new instance had the exact data
 
 <img width="574" height="176" alt="image" src="https://github.com/user-attachments/assets/456c4f8a-7884-416e-b97d-9bf5e0e21588" />
 
-       
+
+created a volume and connected to shell instance
+file -s /dev/xvdf  ----check file path
+df -h ----show volumes
+mkfs -t ext4 /dev/xvdf  ---format volume
+mkdir /mnt/my-data    -created directory
+apt-get clean       ----clean
+mount /dev/xvdf /mnt/my-data ----mounting
+
+
+<img width="708" height="394" alt="image" src="https://github.com/user-attachments/assets/6cb05ab2-571e-4b4a-9987-f8c14ea3dbf0" />
+
+
