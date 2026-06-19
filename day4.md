@@ -28,5 +28,6 @@ created a ami
 created a new instance 
 and the new instance had the exact data 
 
+<img width="574" height="176" alt="image" src="https://github.com/user-attachments/assets/456c4f8a-7884-416e-b97d-9bf5e0e21588" />
 
        
