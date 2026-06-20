@@ -1,4 +1,4 @@
-<img width="802" height="448" alt="image" src="https://github.com/user-attachments/assets/b655a066-9a30-426c-885f-dcf2157628dc" />TASK : Learn DNS routing conceptually 
+TASK : Learn DNS routing conceptually 
        browser ---> url --- router53 --decides which resource to pull from instead of going to 1 single IP address 
        the disctribtion based on which route53 pulls data from resources can be modified 
        1.weighted routing policy ---- we can place percentage based on which the ratio over which the links will be divided can be adjusted
