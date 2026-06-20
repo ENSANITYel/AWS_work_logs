@@ -35,6 +35,12 @@ TASK : Learn DNS routing conceptually
 TASK : CLEAN UP
 --------------
 tear down a asg , alb , ec2 instance and rds database you do not trigger charges....leave your vpc intact 
+1.deleted asg
+2.deleted alb 
+3.stopped all instance
+4.deleted templates
+5.deleted rds db
+
 
 TASK : portfolio website make it static
 ------------------------------------
