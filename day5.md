@@ -1,4 +1,4 @@
-TASK : Learn DNS routing conceptually 
+<img width="802" height="448" alt="image" src="https://github.com/user-attachments/assets/b655a066-9a30-426c-885f-dcf2157628dc" />TASK : Learn DNS routing conceptually 
        browser ---> url --- router53 --decides which resource to pull from instead of going to 1 single IP address 
        the disctribtion based on which route53 pulls data from resources can be modified 
        1.weighted routing policy ---- we can place percentage based on which the ratio over which the links will be divided can be adjusted
@@ -16,9 +16,13 @@ TASK : Learn DNS routing conceptually
  --------------
  user---> internet ---> system config files (hosts)----> alb ---> resources 
  NOTE : DONT USE A EC2 instance as a system config it will create a bottleneck 
+
+ nslookup alb-test-634172963.us-east-1.elb.amazonaws.com
+
  <img width="728" height="239" alt="image" src="https://github.com/user-attachments/assets/3991ef9d-da0c-420c-92ea-6d7b0bb9d85b" />
 
  <img width="802" height="448" alt="image" src="https://github.com/user-attachments/assets/3db78f6a-bb3e-4659-8358-03e015035fb9" />
+
  modifying this file and adding alb ip address in hosts file would make it work as route 53 
 
  
