@@ -32,3 +32,22 @@ create git dependency
 
 
 
+SIDE PROJECT(cyber deck)
+
+Create a total independent linux system to practice bash 
+used termux and termux x-11
+install ubuntu over termux and running on tablet
+installed vscode 
+------------------
+STILL LEFT 
+
+install chrome 
+set up aws on the deck
+
+create an AI agent 
+should handle voice chats 
+should be total automated 
+
+------------------
+REASON: embed AI agent to self recognise cases and provide resolution based on DB source 
+under the extension project
