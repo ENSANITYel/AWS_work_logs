@@ -9,10 +9,11 @@ functionalities added till now:
 
 
 V3.2
-1.add incident , category based on user name and time and its respective details and queries
-2.add incident search
-3.add category search 
-4.add incident updated based on user name
+
+   1.add incident , category based on user name and time and its respective details and queries
+   2.add incident search
+   3.add category search 
+   4.add incident updated based on user name
 
 <img width="346" height="399" alt="image" src="https://github.com/user-attachments/assets/62031cba-51ac-4c4b-9739-c723c5f56aff" />
 
@@ -22,6 +23,8 @@ V3.3
 5.added more coloumns in data output make it collapsable so dat when huge data output doesnt cluster
 
 <img width="295" height="134" alt="image" src="https://github.com/user-attachments/assets/cea8f2bc-7768-4356-9fd6-eec38a78970a" />
+
+
 <img width="296" height="147" alt="image" src="https://github.com/user-attachments/assets/5bf47f37-533f-400b-b610-65a1b5dc950a" />
 
 V3.3--- 24th-06-2026
