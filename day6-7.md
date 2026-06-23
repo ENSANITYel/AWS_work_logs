@@ -21,6 +21,14 @@ COMPLETED---till now
 V3.3
 5.added more coloumns in data output make it collapsable so dat when huge data output doesnt cluster
 
+<img width="295" height="134" alt="image" src="https://github.com/user-attachments/assets/cea8f2bc-7768-4356-9fd6-eec38a78970a" />
+<img width="296" height="147" alt="image" src="https://github.com/user-attachments/assets/5bf47f37-533f-400b-b610-65a1b5dc950a" />
+
+V3.3--- 24th-06-2026
+<img width="296" height="598" alt="image" src="https://github.com/user-attachments/assets/dd1f3bfd-434a-4c45-b340-0f80a34ae8be" />
+
+Modular outputs achived --v3.3
+
 V4.0
 test run on AWS ec2 + s3 ---attain total independency
 
