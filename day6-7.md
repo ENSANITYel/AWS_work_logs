@@ -32,6 +32,27 @@ V3.3--- 24th-06-2026
 
 Modular outputs achived --v3.3
 
+# Deployment Notes
+
+## Overview
+This folder contains the deployment and release documentation for the Query Saver extension project.
+
+## Files
+- DEPLOYMENT.md — deployment plan, current v3.6 status, and migration notes
+- release-plan.md — active release plan for v3.6 and staged v3.7 work
+
+## Current Status
+- The current active branch is release/v3.6-only.
+- The v3.6 category feature set is working locally.
+- The local backend category APIs are verified.
+- The extension popup supports category search, category creation, and activity viewing.
+
+## Notes
+Use this folder as the main documentation hub for release and deployment updates.
+
+3.6 deployed
+
+
 V4.0
 test run on AWS ec2 + s3 ---attain total independency
 
