@@ -51,6 +51,7 @@ This folder contains the deployment and release documentation for the Query Save
 Use this folder as the main documentation hub for release and deployment updates.
 
 3.6 deployed
+<img width="284" height="408" alt="image" src="https://github.com/user-attachments/assets/843e313d-848a-46b0-9a04-52e3e60242a5" />
 
 
 V4.0
