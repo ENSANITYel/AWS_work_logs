@@ -128,4 +128,58 @@ should be total automated
 
 ------------------
 REASON: embed AI agent to self recognise cases and provide resolution based on DB source 
-under the extension project
+
+AI-Powered Incident Management System (Future Rollout Plan)
+
+
+​Overview: This plan outlines the architecture for upgrading the extension to utilize AI auto-scraping, Natural Language Processing (NLP), and Vector Similarity Search. The goal is to scrape HTML content, extract incident context, and dynamically map it to database categories using cosine deviation.
+
+
+​Phase 1: Auto-Scraping (The Content Script)
+​To automate data capture without manual entry, the Chrome Extension API will be utilized to scrape the active page.
+​Inject a content.js script into the user's active webpage when the extension is clicked.
+​Configure the script to read the DOM and scrape the specific incident ID along with its surrounding description block.
+​Pass this raw text payload back to the popup.js frontend via Chrome message passing.
+
+
+​Phase 2: Meaning Extraction (The LLM Layer)
+​Raw HTML scrapes often contain system jargon that needs cleaning.
+​Route the raw scraped data from the extension directly to the Express backend.
+​Program the backend to make an API call to an external LLM provider.
+​Prompt the LLM to analyze the messy text and return a structured summary, such as translating raw logs into "ITM is missing event 15 during create event".
+
+
+​Phase 3: Vector Embeddings & MongoDB Atlas Integration
+​Text summaries must be converted into mathematical arrays (vectors) to compare incident meanings against saved categories.
+​Leverage the MongoDB Atlas Free Tier (M0 cluster) environment established in v3.7, which natively supports Atlas Vector Search.
+​Command the backend to pass the clean LLM summary to an embedding model, transforming the text into a vector embedding.
+​Query this new vector against the existing database of incidents and categories.
+
+
+​Phase 4: Cosine Deviation & Routing Logic
+​Atlas Vector Search compares vectors using Cosine Distance, calculated mathematically as 1 - \text{Cosine Similarity}.
+​The backend will determine the relationship between the incident and existing categories using this formula:
+
+Cosine similarity = A.B
+                   ----
+                   |A||B|
+
+
+Search ResultSimilarity ScoreBackend ActionExtension UI Display
+
+Close Match> 0.85 (Low Deviation)Map to existing categoryAuto-selects the nearest category in the dropdown.
+
+Partial Match0.70 - 0.85 (Medium Deviation)Fetch nearby categoriesSuggests the top 3 closest existing categories to the user.
+
+High Deviation< 0.70 (No good match)Trigger new category creationPrompts user to add a new AI-generated category name.
+
+Phase 5: Generating and Saving Records
+​The user retains ultimate control over the AI's suggestions.
+​Ensure the user reviews and clicks "Approve" when a high deviation triggers a new category suggestion.
+​Connect the approval action to the existing POST /categories endpoint from the v3.6 build.
+​Save the new category to MongoDB, alongside its generated vector embedding.
+​Future highly variable incidents of this specific nature will now perfectly map to this new anchor category with minimal deviation.
+
+​Projections & System Constraints
+​Latency: Introducing an LLM and vector embedding model will likely add a slight delay (typically 1-3 seconds) between the user clicking the extension and the UI populating with deductions.
+​Storage Limits: High-dimensional vector embeddings consume significantly more database storage; database size must be actively monitored to stay within the MongoDB Atlas 512MB free tier limit.
