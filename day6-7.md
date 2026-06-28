@@ -54,6 +54,51 @@ Use this folder as the main documentation hub for release and deployment updates
 <img width="284" height="408" alt="image" src="https://github.com/user-attachments/assets/843e313d-848a-46b0-9a04-52e3e60242a5" />
 
 
+3.7 planning 
+[User clicks "+" button] 
+         │
+         ▼
+ 1. popup.js (Extension) captures input ──► Sends HTTPS POST to Railway URL
+                                                    │
+                                                    ▼
+ 2. Railway Router ──► Wakes up standard Express port ──► backend/server.js processes route
+                                                                    │
+                                                                    ▼
+ 3. Mongoose Driver ──► Uses MONGODB_URI credential ──► Pushes payload into MongoDB Atlas
+                                                                    │
+                                                                    ▼
+ 4. MongoDB Atlas ──► Persists data into cluster ──► Returns success status code (201)
+                                                                    │
+                                                                    ▼
+ 5. Railway Backend ──► Forwards sanitized JSON payload back to user browser
+                                                                    │
+                                                                    ▼
+[popup.js appends new option into UI accordion/dropdown dynamically]
+
+
+
+DATA DIAGRAM
+
+[1. CHROME EXTENSION] 
+   │ (User clicks "+" to save an incident/category)
+
+   
+[2. SECURE NETWORK REQUEST] 
+   │ (popup.js sends an HTTPS request over the internet to your cloud URL)
+
+   
+[3. RAILWAY SERVER (Runs 24/7)] 
+   │ (backend/server.js processes the data using environment variables)
+
+   
+[4. MONGODB ATLAS (Cloud Database)] 
+   │ (The data is securely written and permanently saved to your cluster)
+
+   
+[5. SUCCESS RESPONSE]
+   └── (Server confirms the save and the Extension UI instantly updates)
+
+   
 V4.0
 test run on AWS ec2 + s3 ---attain total independency
 
