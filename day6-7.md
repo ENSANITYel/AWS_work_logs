@@ -98,7 +98,45 @@ DATA DIAGRAM
 [5. SUCCESS RESPONSE]
    └── (Server confirms the save and the Extension UI instantly updates)
 
-   
+
+new branch created 3.7 cloud
+Atlas cluster created 
+testing 
+<img width="763" height="101" alt="image" src="https://github.com/user-attachments/assets/5a721d20-969a-4897-bfaa-71187fe740aa" />
+
+  connected to code and checked 
+
+<img width="1360" height="596" alt="image" src="https://github.com/user-attachments/assets/23bbeb14-a68c-4535-8dd7-40c57ad57a99" />
+
+   deployed in railway.app---image creation on progress
+
+<img width="1363" height="604" alt="image" src="https://github.com/user-attachments/assets/4936f863-eda5-4022-8018-9f1698a60900" />
+
+  properly running in railway.app
+  
+<img width="1350" height="588" alt="image" src="https://github.com/user-attachments/assets/ec3cb6f3-7523-467b-a49a-168b224c6635" />
+
+----testing-----
+stuck with error on pressing shows 
+Issue found in manifest.json
+
+   SCRIPT
+   "action": {
+    "default_popup": "popup.html"
+    },
+    
+  action was not mentioned leading to the issue
+  data testing not done
+
+<img width="1354" height="665" alt="image" src="https://github.com/user-attachments/assets/03a95402-490f-48f9-86b4-d6b611265197" />
+
+
+
+V3.8 userid json list implementations
+
+V3.9 docker implementations
+
+
 V4.0
 test run on AWS ec2 + s3 ---attain total independency
 
